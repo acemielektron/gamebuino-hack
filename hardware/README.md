@@ -1,4 +1,4 @@
-# gamebuino-hack
+# gamebuino-hack (eagle cad files)
 A diy clone of open source [gamebuino classic](http://legacy.gamebuino.com/wiki)
 
 **Differences in hardware**

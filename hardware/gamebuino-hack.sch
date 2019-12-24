@@ -3666,7 +3666,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R3" library="myParts" deviceset="RESISTOR" device="-805" value="10K"/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VIN" device=""/>
-<part name="C6" library="myParts" deviceset="CAP" device="-805" value="10mF"/>
 <part name="S1" library="SparkFun-Switches" deviceset="SWITCH-SPDT" device="-PTH-11.6X4.0MM"/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VIN" device=""/>
@@ -3821,10 +3820,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </instance>
 <instance part="SUPPLY6" gate="G$1" x="22.86" y="58.42" smashed="yes">
 <attribute name="VALUE" x="22.86" y="61.214" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="C6" gate="G$1" x="99.06" y="106.68" smashed="yes" rot="R90">
-<attribute name="NAME" x="96.139" y="108.204" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="101.219" y="108.204" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 <instance part="S1" gate="1" x="27.94" y="152.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="26.67" y="149.352" size="1.778" layer="95" font="vector" rot="R180" align="bottom-center"/>
@@ -4205,9 +4200,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="127" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="101.6" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 <label x="101.6" y="106.68" size="1.778" layer="95"/>
+<pinref part="LS1" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="109.22" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -4306,13 +4302,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U1" gate="G$1" pin="PC3(ADC3)"/>
 <wire x1="127" y1="81.28" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
 <label x="129.54" y="81.28" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="LS1" gate="G$1" pin="2"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="109.22" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_BATT" class="0">
