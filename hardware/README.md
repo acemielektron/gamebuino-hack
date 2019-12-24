@@ -16,5 +16,6 @@ A diy clone of open source [gamebuino classic](http://legacy.gamebuino.com/wiki)
 **Schematic**
 ![Shematic](schematic.png)
 
+
 **PCB**
 ![PCB](board.png)
