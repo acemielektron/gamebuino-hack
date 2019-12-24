@@ -301,10 +301,10 @@ int main(void) {
   SP=RAMEND;  // This is done by hardware reset
 #endif
 
-  // if the C button is currently pressed then try to run the loader app
-  DDRC &= ~(1 << PC3);
-  PORTC |= (1 << PC3);
-  if (!(PINC & (1<<PC3)))
+  // if the D5 button is currently pressed then try to run the loader app
+  DDRD &= ~(1 << PD5);
+  PORTD |= (1 << PD5);
+  if (!(PIND & (1<<PD5)))
 	  load_loader();
 
   // Adaboot no-wait mod
