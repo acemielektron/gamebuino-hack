@@ -13,3 +13,14 @@ A diy clone of open source [gamebuino classic](http://legacy.gamebuino.com/wiki)
   - gamebuino requires a [custom bootloader](https://github.com/ghalfacree/Arduino-Sketches/tree/master/hardware/arduino/bootloaders/gamebuino_boot) for loading games from sd-card to work
   - gamebuino bootloader only supports fat16 formatted sd cards
 
+**Pictures**
+
+![Hack running race](images/hack_race.png)
+
+![Hack games selection screen](images/hack_gamelist.png)
+
+![Hack battery & TP4056 charger](images/hack_battery.png)
+
+![Hack PCB backside](images/hack_pcb.png)
+
+![Hack PCB frontside](images/hack_pcb_front.png]
