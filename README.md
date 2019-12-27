@@ -15,12 +15,12 @@ A diy clone of open source [gamebuino classic](http://legacy.gamebuino.com/wiki)
 
 **Pictures**
 
-![Hack running race](./images/hack_race.png)
+![Hack running race](images/hack_race.png)
 
-![Hack games selection screen](./images/hack_gamelist.png)
+![Hack games selection screen](images/hack_gamelist.png)
 
-![Hack battery & TP4056 charger](./images/hack_battery.png)
+![Hack battery & TP4056 charger](images/hack_battery.png)
 
-![Hack PCB backside](./images/hack_pcb.png)
+![Hack PCB backside](images/hack_pcb.png)
 
-![Hack PCB frontside](./images/hack_pcb_front.png)
+![Hack PCB frontside](images/hack_pcb_front.png)
