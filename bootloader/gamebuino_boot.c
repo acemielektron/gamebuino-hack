@@ -149,7 +149,6 @@
 #define MAKESTR(a) #a
 #define MAKEVER(a, b) MAKESTR(a*256+b)
 
-#define PC3 3
 
 asm("  .section .version\n"
     "optiboot_version:  .word " MAKEVER(OPTIBOOT_MAJVER, OPTIBOOT_MINVER) "\n"
@@ -165,6 +164,7 @@ asm(	".section .jumps,\"ax\",@progbits\n"
 #include <inttypes.h>
 #include <avr/io.h>
 #include <avr/pgmspace.h>
+#include <util/delay.h>
 
 // <avr/boot.h> uses sts instructions, but this version uses out instructions
 // This saves cycles and program memory.
@@ -304,6 +304,7 @@ int main(void) {
   // if the D5 button is currently pressed then try to run the loader app
   DDRD &= ~(1 << PD5);
   PORTD |= (1 << PD5);
+  _delay_ms(1); //wait for parasitic capacitance
   if (!(PIND & (1<<PD5)))
 	  load_loader();
 
