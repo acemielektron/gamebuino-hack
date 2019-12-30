@@ -1,6 +1,6 @@
-Welcome to the Gamebuino official repository !
-Please visit [the website](http://gamebuino.com) for more information.
-The [Getting Started](http://gamebuino.com/wiki/index.php?title=Getting_started) page explains how to use your Gamebuino.
+This is a copy of gamebuino-classic arduino library.
+Please visit [gamebuino website](http://gamebuino.com) for more information.
+The [Getting Started](http://gamebuino.com/wiki/index.php?title=Getting_started) page explains how to use original Gamebuino-classic.
 
 ![](http://gamebuino.com/wp-content/uploads/2013/10/gamebuino.gif)
 
