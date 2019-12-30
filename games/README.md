@@ -1,4 +1,4 @@
-# gamebuino-hack - games4hack
+# gamebuino-hack / games4hack
 A diy clone of open source [gamebuino classic](http://legacy.gamebuino.com/wiki)
 
 **Gamebuino games modified for hack**
