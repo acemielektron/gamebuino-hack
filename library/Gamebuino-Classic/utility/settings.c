@@ -27,16 +27,16 @@
 
 //SETTINGS YOU CAN EDIT
 
-#define NUM_CHANNELS 1 //number of sound channels, between 0 and 4
+#define NUM_CHANNELS 4 //number of sound channels, between 0 and 4
 #define DISPLAY_ROT NOROT //set to NOROT, ROTCCW, ROT180 or ROTCW. Can be used to play in portrait mode.
 #define ENABLE_GUI 1 //enable menu, keyboard, pop-up, volume adjust functions
 #define ENABLE_BITMAPS 1 //will replace bitmaps with rectangles if disabled
 #define ENABLE_GRAYSCALE 1 //allows the use of the GRAY color
-#define EXTENDED_NOTE_RANGE 0 //allows the use of notes above A 5... please avoid that they sound really bad
+#define EXTENDED_NOTE_RANGE 1 //allows the use of notes above A 5... please avoid that they sound really bad
 
 //not really useful
 #define ENABLE_BATTERY 1 //disable battery monitoring
-#define ENABLE_BACKLIGHT 1 //disable automatic back-light
+#define ENABLE_BACKLIGHT 0 //disable automatic back-light
 
 //IT'S STRONGLY ADVISED TO LEAVE THE FOLLOWING SETTINGS ALONE
 
@@ -79,7 +79,7 @@
 #define VOLUME_CHANNEL_MAX 255/NUM_CHANNELS/7/9 //7=instrument volume 9=note volume
 
 //battery voltage monitor
-#define BAT_PIN A6
+#define BAT_PIN A3
 #define NUM_LVL 4
 #define BAT_LVL_CRITIC  3500
 #define BAT_LVL_LOW		3550
@@ -90,13 +90,13 @@
 #define SD_CS 10
 
 //screens back light
-#define BACKLIGHT_PIN 5
+#define BACKLIGHT_PIN -1
 //auto back-light levels
 #define BACKLIGHT_MIN 0
 #define BACKLIGHT_MAX 255
 
 //ambient light sensor
-#define AMBIENTLIGHT_PIN A7
+#define AMBIENTLIGHT_PIN -1
 //auto back-light levels
 #define AMBIENTLIGHT_MIN 800 //800
 #define AMBIENTLIGHT_MAX 980 //1000
@@ -136,6 +136,6 @@
 #define BTN_LEFT_PIN    8
 #define BTN_A_PIN       4
 #define BTN_B_PIN       2
-#define BTN_C_PIN       A3
+#define BTN_C_PIN       5
 
 #endif /* SETTINGS_C */
